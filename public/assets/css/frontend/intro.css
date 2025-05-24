@@ -1,0 +1,307 @@
+.intro-bg-container {
+  background-image: url('/images/intro-background-laptop.png');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.intro-content-section {
+  margin: auto;
+}
+
+.main-content-container {
+  margin: auto;
+}
+
+.intro-logo-img {
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.intro-slogan {
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 5rem;
+    letter-spacing: 0;
+
+  color: var(--color-heading);
+  margin: 0 0 1.5rem 0;
+  position: relative;
+  text-align: right;
+  padding: 0;
+}
+
+.intro-highlighted-text {
+  position: relative;
+  display: inline-block;
+  color: var(--color-highlight);
+}
+
+.intro-highlighted-text::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  right: 0;
+  width: 100%;
+  height: 12px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 173 12' fill='none'%3E%3Cpath d='M2 9.99999C36.3365 -1.82835 84.0857 0.561548 171 10' stroke='%23003090' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-size: 173px 12px;
+  z-index: 5;
+}
+
+.intro-description {
+  margin: 1.5rem 0 0 0;
+  max-width: 600px;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+    letter-spacing: 0;
+  padding: 0;
+
+  color: var(--color-text-medium);
+  text-align: right;
+}
+
+.intro-btn-custom {
+  height: 2.9375rem;
+  width: 14.625rem;
+  border-radius: 12px;
+  padding: 10px 40px;
+  background-color: var(--color-primary);
+  color: var(--color-bg-white);
+  font-size: 1.125rem;
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.intro-btn-custom-2 {
+  background-color: var(--color-secondary) !important;
+}
+
+.intro-btn-custom:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
+
+.intro-btn-custom:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 6px rgba(0, 48, 144, 0.3);
+}
+.cots-style-img{
+  position: absolute;
+  top: -15px;
+  left: -25px;
+}
+
+.dot-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 20px;
+  margin-top: 40px;
+}
+
+.dot-row {
+  display: flex;
+  gap: 5px;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #d3d3d3; /* light gray */
+}
+.dot-grid2 {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin: 20px;
+  margin-top: 40px;
+}
+
+  .dot-row2 {
+  display: flex;
+  gap: 3px;
+}
+
+.dot2 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #d3d3d3; /* light gray */
+}
+.design-wrapper {
+  position: absolute;
+  bottom: 22%;
+  left: 3%;
+  width: 400px;
+}
+
+.circle {
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 30%;
+    top: -20px;
+}
+
+.profile-circle {
+  overflow: hidden;
+  z-index: 20;
+}
+
+.profile-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rectangle-img {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 350px;
+  z-index: 10;
+}
+
+
+/* Responsive Breakpoints */
+@media (max-width: 1250px) {
+  .intro-content-section {
+    padding: 3rem;
+  }
+}
+.bg-wrapper{
+  position: relative;
+    width: 250px;
+    height: 175px;
+}
+/* Circles */
+.circle {
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 12%;
+  top: -20px;
+}
+
+.circle-lg {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 150px;
+  height: 150px;}
+
+.circle-md {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 36%;
+  left: 50%;
+}
+
+.circle-sm {
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  width: 30px;
+  height: 30px;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outer-circle {
+  width: 25px;
+  height: 25px;
+  background-color: #e5e7eb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-circle {
+  width: 15px;
+  height: 15px;
+  /* background-color: #f43f5e; */
+  border-radius: 50%;
+}
+@media (max-width: 992px) {
+  .intro-bg-container {
+    background-image: url('/images/intro-background-Mobile.png');
+  }
+
+  .intro-content-section {
+    justify-items: center;
+  }
+
+  .intro-slogan,
+  .intro-description {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-content-section {
+    padding: 2rem;
+  }
+
+  .intro-slogan {
+    font-size: 2.2rem;
+    line-height: 4rem;
+  }
+
+.intro-btn-custom {
+  height: 3rem;
+  width: 16.625rem;
+
+}
+.circle,
+.circle-lg,
+.circle-md,
+.circle-sm,
+.circle-container,
+.outer-circle,
+.inner-circle,
+.rectangle-img,
+.profile-circle,
+.design-wrapper,
+.dot-grid,
+.dot-row,
+.dot,
+.dot-grid2,
+.dot-row2,
+.dot2 {
+  display: none;
+}
+}
+
+
+/* 
+  BOOTSTRAP 5 BREAKPOINTS CHEAT SHEET
+  Mobile-first approach (styles apply to larger screens unless overridden)
+  
+  Breakpoint   Min-Width     Max-Width                        Use Case
+  ----------   ---------     ---------                        --------
+  X-Small      <576px         @media (max-width: 575.98px)    - Default (phones)
+  Small (sm)   ≥576px         @media (min-width: 576px)       - Large phones
+  Medium (md)  ≥768px         @media (min-width: 768px)       - Tablets
+  Large (lg)   ≥992px         @media (min-width: 992px)       - Laptops
+  XL (xl)      ≥1200px        @media (min-width: 1200px)      - Desktops
+  XXL (xxl)    ≥1400px        @media (min-width: 1400px)      - Large screens
+*/
